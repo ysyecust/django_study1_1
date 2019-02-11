@@ -1,0 +1,23 @@
+{% extends "base.html|" %}
+{% block title %}blog titles{% endblock %}
+{% block content %}
+<div class="row text-center vertical-middle-sm">
+    <h1>杨邵毅的博客</h1>
+</div>
+<div class="row">
+    <div class="col-xs-12 col-md-8">
+        <u1>
+            {% for blog in blogs %}
+            <li>{{ blog.title }}}</li>
+            {% endfor %}
+        </u1>
+        </div>
+        <div>
+            <div class="col-xs-6 col-md-4">
+                <h2>自嗨</h2>
+                <p>杨邵毅最帅</p>
+                <img width="200px" src="http://www.mrwallpaper.com/wallpaper/Fluffy-Cat.jpg">
+        </div>
+        </div>
+</div>
+{% endblock %}
